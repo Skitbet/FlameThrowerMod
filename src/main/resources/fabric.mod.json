@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "flamethrower",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Flame Thrower",
+  "description": "A cool flame thrower mod.",
   "authors": [
     "Me!"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Skitbet/FlameThrowerMod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/flamethrower/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.skitbet.flamethrowermod.FlameThrowerMod"
+    ],
+    "client": [
+      "com.skitbet.flamethrowermod.FlameThrowerClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "flamethrower.mixins.json"
   ],
 
   "depends": {
